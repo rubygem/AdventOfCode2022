@@ -1,7 +1,4 @@
 import unittest
-from functools import reduce
-
-import numpy as np
 
 
 class MyTestCase(unittest.TestCase):
@@ -29,6 +26,8 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(33711 + 6672, elfCalories[1])
         elfCalories.sort(reverse=True)
         self.assertEqual(71124, elfCalories[0])
+        top3 = elfCalories[0] + elfCalories[1] + elfCalories[2]
+        self.assertEqual(204639, top3)
 
 if __name__ == '__main__':
     unittest.main()
