@@ -1,8 +1,4 @@
 import unittest
-from functools import reduce
-
-import numpy as np
-
 
 class MyTestCase(unittest.TestCase):
     def test_something(self):
